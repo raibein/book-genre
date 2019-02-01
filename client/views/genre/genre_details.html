@@ -1,0 +1,17 @@
+<a href="#!/genres">back to main page...</a>
+<div  ng-init="getGenre()">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card flex-md-row mb-4 shadow-sm h-md-250">
+                    <div class="card-body d-flex flex-column align-items-start">
+                        <h3 class="mb-0">{{genre.name}}</h3>
+                        <div class="mb-1 text-muted">{{genre.created_date}}</div>
+                        <div>
+                                <a href="#!/genres/edit/{{genre._id}}">Edit</a> | <a href="#" ng-click="deleteGenre(genre._id)">Delete</a>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </div>
+    
